@@ -5,7 +5,8 @@ export default function Home() {
      Hello I am ! Main branch
      nd please keep my changes before pushing any further change
 
-     i am pushing a small commit.
+     i am pushing a small change in main branch. ! 
+
     </div>
   );
 }
