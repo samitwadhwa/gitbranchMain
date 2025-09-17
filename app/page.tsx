@@ -5,6 +5,10 @@ export default function Home() {
      Hello I am ! Main branch
      nd please keep my changes before pushing any further change 
      Hello ! Base branch
+
+    <div>
+      A small change!
+    </div>
     </div>
   );
 }
