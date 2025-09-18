@@ -1,0 +1,149 @@
+.payments-container {
+  padding: 20px;
+  
+}
+
+/* Main Card */
+.payments-card {
+  display: flex;
+  gap: 200px;
+  background: white;
+  border-radius: 10px;
+  padding: 50px;
+  align-items: center;
+  
+  background-image: url("../../public/img/snow.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-right: 120px;
+}
+
+.payments-image {
+  max-width: 300px;
+}
+
+.payments-content h5 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #333;
+}
+
+.payments-content> .icon> h2 {
+  font-size: 35px;
+  margin: 8px 0;
+}
+
+.read-more {
+  color: #3a00ff;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* Settlements Section */
+.settlements-title {
+  margin-top: 40px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #2a2a2a;
+}
+
+.settlements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.settlement-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.settlement-card .icon {
+ background-color: #4a00e0; /* Purple background */
+  width: 60px;
+  height: 60px;
+  border-radius: 12px; /* Rounded corners */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.settlement-card .icon i {
+  color: white; /* Icon color */
+  font-size: 28px; /* Icon size */
+}
+.settlement-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-secondary {
+  padding: 10px 20px;
+  background: #eaeaea;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  background: #3a00ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .payments-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1300px) {
+  .payments-card {
+  padding: 10px;
+  gap: 10px;
+  
+}
+}
+
+.home-icon-box {
+  width: 70px;
+  height: 30px;
+  background-color: #3b18f9; /* Blue background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px; /* Rounded box */
+}
+
+.home-icon {
+color: white;
+    font-size: 22px;
+    width: 45px;
+    height: 45px;
+    background-color: #3b18f9;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+ .settlement-card h4 {
+    font-size: 19px;
+}

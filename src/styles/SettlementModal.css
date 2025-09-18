@@ -1,0 +1,232 @@
+/* Backdrop */
+#SettlementBack .modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+  z-index: 999;
+}
+
+/* Modal Box */
+#SettlementBack .modal-box {
+  background: #fff;
+  width: 480px;
+  max-height: 90vh;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+#SettlementBack .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+}
+#SettlementBack .modal-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+#SettlementBack .close-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Body */
+#SettlementBack .modal-body {
+
+    overflow-y: auto;
+    
+    padding: 16px;
+}
+#SettlementBack .section-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0070f3;
+  margin-bottom: 10px;
+}
+#SettlementBack .section-heading {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+#SettlementBack .row-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+#SettlementBack .highlight {
+  font-weight: 600;
+}
+#SettlementBack .note-red {
+  font-size: 12px;
+  color: red;
+  margin-top: 6px;
+}
+#SettlementBack .note-box {
+  background: #fff8e6;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  margin-top: 12px;
+}
+#SettlementBack .note-box .link {
+  color: #0070f3;
+  font-weight: 500;
+}
+
+/* Footer */
+#SettlementBack .modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  border-top: 1px solid #eee;
+  padding: 12px 16px;
+}
+#SettlementBack .btn-outline {
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#SettlementBack .btn-primary {
+  border: none;
+  background: #0070f3;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#SettlementBack .btn-primary:hover {
+  background: #005ec2;
+}
+
+#SettlementBack .holiday-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+#SettlementBack .holiday-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#SettlementBack .holiday-list th, 
+.holiday-list td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+#SettlementBack .holiday-list th {
+  background: #f5f5f5;
+  font-weight: bold;
+}
+
+#SettlementBack .holiday-list tr:hover {
+  background: #f9f9f9;
+}
+
+#SettlementBack .accordion-container {
+  font-family: Arial, sans-serif;
+  margin: 16px 0;
+}
+
+#SettlementBack .accordion-toggle {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#SettlementBack .accordion-content {
+  margin-top: 10px;
+ background: #fff8e6;
+  /* border: 1px solid #eee; */
+  padding: 16px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+#SettlementBack .holiday-text {
+  color: orange;
+  font-weight: bold;
+}
+
+#SettlementBack .example-box {
+  margin-top: 20px;
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+}
+
+#SettlementBack .timeline {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#SettlementBack .circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+#SettlementBack .circle.blue {
+  background: #2d8cf0;
+}
+
+#SettlementBack .circle.gray {
+  background: #ccc;
+}
+
+#SettlementBack .circle.green {
+  background: #28a745;
+}
+
+#SettlementBack .circle.red {
+  background: #e74c3c;
+}
+
+#SettlementBack .line {
+  flex: 1;
+  height: 2px;
+  background: #ddd;
+  margin: 0 6px;
+}
+
+#SettlementBack .line.curved {
+  border-top: 2px solid #ddd;
+  border-radius: 50px;
+  height: 20px;
+}
+
+#SettlementBack .labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  font-size: 12px;
+  color: #666;
+}

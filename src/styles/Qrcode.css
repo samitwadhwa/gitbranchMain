@@ -1,0 +1,845 @@
+#myqrcodeprocess {
+  text-align: center;
+  position: relative;
+  background-image: url("../../public/img/snow.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px 50px 0px 50px;
+  margin: 20px;
+}
+
+#myqrcodetour .payments-container {
+  padding: 20px;
+
+}
+
+/* Main Card */
+#myqrcodetour .payments-card {
+  display: flex;
+  gap: 130px;
+  background: white;
+  border-radius: 10px;
+  padding: 50px;
+  align-items: center;
+
+  background-image: url("../../public/img/snow.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-right: 70px;
+}
+
+#myqrcodetour .payments-image {
+  max-width: 300px;
+}
+
+#myqrcodetour .payments-content h5 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #333;
+}
+
+#myqrcodetour .payments-content>.icon>h2 {
+  font-size: 35px;
+  margin: 8px 0;
+}
+
+#myqrcodetour .read-more {
+  color: #3a00ff;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#myqrcodetour .read-more:hover {
+  text-decoration: underline;
+}
+
+/* Settlements Section */
+#myqrcodetour .settlements-title {
+  margin-top: 40px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #2a2a2a;
+}
+
+#myqrcodetour .settlements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+#myqrcodetour .settlement-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+#myqrcodetour .settlement-card .icon {
+  background-color: #4a00e0;
+  /* Purple background */
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  /* Rounded corners */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#myqrcodetour .settlement-card .icon i {
+  color: white;
+  /* Icon color */
+  font-size: 28px;
+  /* Icon size */
+}
+
+#myqrcodetour .settlement-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#myqrcodetour .btn-secondary {
+  padding: 10px 20px;
+  background: #eaeaea;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#myqrcodetour .btn-primary {
+  padding: 10px 20px;
+  background: #3a00ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #myqrcodetour .payments-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #myqrcodeprocess img {
+    display: none;
+  }
+}
+
+@media (max-width: 1300px) {
+  #myqrcodetour .payments-card {
+    padding: 10px;
+    gap: 10px;
+
+  }
+}
+
+#myqrcodetour .settlement-card h4 {
+  font-size: 19px;
+}
+
+#myqrcodetour .home-icon-box {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  /* Rounded box */
+}
+
+#myqrcodetour .home-icon {
+  color: white;
+  font-size: 22px;
+  width: 45px;
+  height: 45px;
+  background-color: #3b18f9;
+  /* Blue background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+
+
+
+#myqrcodeprocess .get-started-wrapper h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Steps container */
+#myqrcodeprocess .steps-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0px;
+  position: relative;
+  flex-wrap: wrap;
+  /* important for mobile */
+}
+
+/* Each step */
+#myqrcodeprocess .step-item {
+  flex: 1;
+  min-width: 220px;
+  /* ensures wrapping on small screens */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Step Circles */
+#myqrcodeprocess .step-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+  color: #777;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+#myqrcodeprocess .step-circle.active {
+  background: #4285f4;
+  /* blue active step */
+  border-color: #4285f4;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(66, 133, 244, 0.3);
+}
+
+/* Connector Line */
+#myqrcodeprocess .step-line {
+  flex: 1;
+  border-top: 2px dashed #ccc;
+  margin-top: 22px;
+  z-index: 1;
+}
+
+/* Step content */
+#myqrcodeprocess .step-content h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+#myqrcodeprocess .step-content p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 260px;
+}
+
+/* ✅ Responsive Styles */
+@media (max-width: 768px) {
+  #myqrcodeprocess .steps-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  #myqrcodeprocess .step-line {
+    border-left: 2px dashed #ccc;
+    /* vertical line */
+    display: none;
+    height: 40px;
+    margin: 10px 0;
+  }
+
+  #myqrcodeprocess .step-item {
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #myqrcodeprocess .step-content p {
+    max-width: 90%;
+  }
+
+  #myqrcodewrapper .get-started-wrapper {
+    padding: 20px 20px;
+  }
+}
+
+
+
+
+
+
+
+#myqrcodewrapper {
+  padding: 30px 30px 20px 30px;
+  background: #fff;
+  margin: 20px;
+}
+
+/* Header */
+#myqrcodewrapper .hender {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+/* Tabs */
+#myqrcodewrapper .tabs {
+  display: flex;
+  gap: 20px;
+  /* border-bottom: 1px solid #e5e5e5; */
+  margin-bottom: 1px;
+}
+
+#myqrcodewrapper .tab {
+  padding: 10px 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  color: #555;
+  white-space: nowrap;
+}
+
+#myqrcodewrapper .tab.active {
+  color: #4f46e5;
+  border-top: 3px solid #4f46e5;
+  font-weight: 600;
+}
+
+/* Right Actions */
+#myqrcodewrapper #righti {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#myqrcodewrapper .tabi {
+  font-size: 14px;
+  color: #555;
+}
+
+#myqrcodewrapper .create-btn {
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Table */
+#myqrcodewrapper .settlement-table th {
+  background: #f9f9f9;
+}
+
+.settlement-table {
+  margin-top: 6px;
+}
+
+/* Status pills */
+#myqrcodewrapper .status-pill {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+#myqrcodewrapper .status-pill.green {
+  background: #22c55e;
+}
+
+#myqrcodewrapper .status-pill.red {
+  background: #ef4444;
+}
+
+#myqrcodewrapper .status-pill.orange {
+  background: #f59e0b;
+}
+
+/* Details button */
+#myqrcodewrapper .details-btn {
+  background: none;
+  border: none;
+  color: #4f46e5;
+  cursor: pointer;
+}
+
+/* Pagination */
+#myqrcodewrapper .pagination {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#myqrcodewrapper .pagination select {
+  padding: 5px;
+}
+
+#myqrcodewrapper .pagination .page {
+  border: 1px solid #ddd;
+  background: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#myqrcodewrapper .pagination .page.active {
+  background: #4f46e5;
+  color: white;
+}
+
+#myqrcodewrapper .small-input {
+  width: 180px;
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+/* Animation */
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#myqrcodewrapper .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+}
+
+#myqrcodewrapper .modal-content {
+  background: #fff;
+  width: 95%;
+  max-width: 600px;
+  max-height: 700px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* overflow: scroll; */
+}
+
+#myqrcodewrapper .modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 26px;
+  cursor: pointer;
+  color: #ffffff;
+  height: 30px;
+  width: 30px;
+  background: #007bff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#myqrcodewrapper .modal-top-tabs {
+  display: flex;
+  overflow-x: auto;
+  border-bottom: 1px solid #ddd;
+  background: #f9f9f9;
+}
+
+#myqrcodewrapper .top-tab {
+  flex: 0 0 auto;
+  padding: 10px 20px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+#myqrcodewrapper .top-tab.active {
+  border-bottom: 3px solid #007bff;
+  font-weight: bold;
+  color: #007bff;
+}
+
+#myqrcodewrapper .modal-main {
+  padding: 20px;
+}
+
+#myqrcodewrapper .modal-main label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+
+#myqrcodewrapper .modal-footer {
+  margin-top: 20px;
+  text-align: right;
+}
+
+#myqrcodewrapper .next-btn,
+.submit-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#myqrcodewrapper .next-btn {
+  background: #007bff;
+  color: #fefefe;
+}
+
+#myqrcodewrapper .submit-btn {
+  background: #007bff;
+  color: #ffffff;
+}
+
+
+#myqrcodewrapper .modal-header {
+  background-color: #007bff;
+  display: block;
+  color: white;
+}
+
+/* Cards */
+#myqrcodewrapper .card-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+#myqrcodewrapper .stat-card {
+  flex: 1;
+  padding: 20px;
+  color: #fff;
+  border-radius: 6px;
+  text-align: center;
+}
+
+#myqrcodewrapper .stat-card.blue {
+  background: #007bff;
+}
+
+#myqrcodewrapper .stat-card.red {
+  background: #dc3545;
+}
+
+#myqrcodewrapper .stat-card.green {
+  background: #28a745;
+}
+
+#myqrcodewrapper .stat-card.orange {
+  background: #fd7e14;
+}
+
+#myqrcodewrapper .myfilters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+#myqrcodewrapper .small-input {
+  width: 180px;
+  padding: 6px 10px;
+  font-size: 14px;
+  height: 40px;
+  margin-top: 7px;
+  /* margin-bottom: 10px; */
+}
+
+#myqrcodewrapper .filter-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+#myqrcodewrapper .payment-card {
+  border: 1px solid #e8e8e896;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f4f7fe;
+  /* box-shadow: 0 2px 6px rgba(0,0,0,0.05); */
+}
+
+#myqrcodewrapper .payment-card-header {
+  background: #4f23ff;
+  color: #fff;
+  padding: 12px 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+}
+
+#myqrcodewrapper .payment-card-body {
+  padding: 16px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+#myqrcodewrapper .highlight-box {
+  background: #fff;
+  border: 1px solid #cbbdff;
+  border-left: 4px solid #4f23ff;
+  padding: 12px;
+  margin: 16px 0;
+  font-size: 0.9rem;
+  border-radius: 4px;
+}
+
+#myqrcodewrapper .footer-box {
+  background: #fff;
+  border-top: 2px solid #cbbdff;
+  padding: 12px;
+  font-size: 0.9rem;
+  margin-top: 16px;
+}
+
+#myqrcodewrapper .enablebot {
+  background: #5c00ff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+
+#myqrcodewrapper .small-modal .modal-footer {
+  display: flex;
+  justify-content: center;
+  gap: 1px;
+  margin-top: 20px;
+}
+
+#myqrcodewrapper .small-modal {
+  max-width: 600px;
+  text-align: center;
+}
+
+#myqrcodewrapper .yes-btn,
+.no-btn {
+  padding: 8px 16px;
+  margin: 0 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#myqrcodewrapper .yes-btn {
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+}
+
+#myqrcodewrapper .no-btn {
+  background: #000000;
+  color: rgb(255, 255, 255);
+  border: 1px solid black;
+}
+
+.parent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.child1,
+.child2,
+.child3 {
+  border-right: 1px solid blue;
+  padding-right: 10px;
+}
+
+#myqrcodewrapper .form-group {
+  margin-bottom: 14px;
+}
+
+#myqrcodewrapper .form-group>label {
+  font-weight: 600;
+  margin-bottom: 4px;
+  display: block;
+}
+
+#myqrcodewrapper .radio-group {
+  display: flex;
+  gap: 20px;
+  margin-top: 5px;
+}
+
+#myqrcodewrapper .radio-group label {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#myqrcodewrapper textarea.form-control {
+  resize: none;
+  min-height: 60px;
+}
+
+#myqrcodewrapper .char-count {
+  display: block;
+  text-align: right;
+  font-size: 12px;
+  color: #666;
+}
+
+#myqrcodewrapper .optional {
+  font-weight: normal;
+  font-size: 12px;
+  color: #777;
+}
+
+
+
+
+
+
+
+
+/* 📱 Responsive Fixes */
+@media (max-width: 908px) {
+  #myqrcodeprocess {
+    text-align: center;
+    position: relative;
+    background-image: url(/_next/static/media/snow.5560da42.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 10px;
+    margin: 20px;
+    border-radius: 3px;
+  }
+
+  #myqrcodewrapper .card-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  #myqrcodewrapper .myfilters {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  #myqrcodewrapper .filter-group {
+
+    width: 100%;
+  }
+
+  #myqrcodewrapper {
+    padding: 10px 10px 10px 10px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 3px;
+  }
+
+  #myqrcodewrapper .payment-card {
+    border: 1px solid #e8e8e896;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f4f7fe;
+    margin-bottom: 10px;
+    /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); */
+  }
+
+  #myqrcodewrapper .payment-card-body {
+    padding: 6px;
+    font-size: 0.95rem;
+    color: #444;
+  }
+}
+
+@media (max-width: 768px) {
+  #myqrcodewrapper .hender {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Tabs scrollable */
+  #myqrcodewrapper .tabs {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  #myqrcodewrapper .tab {
+    flex: 0 0 auto;
+  }
+
+  /* Right actions wrap below */
+  #myqrcodewrapper #righti {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  #myqrcodewrapper .small-input {
+    width: 100%;
+  }
+
+  #myqrcodewrapper .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 26px;
+    cursor: pointer;
+    color: #007bff;
+    height: 30px;
+    width: 30px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

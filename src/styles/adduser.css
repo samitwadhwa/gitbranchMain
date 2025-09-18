@@ -1,0 +1,260 @@
+.profile-my_form_signup_profile {
+    padding: 30px;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.profile-goBack {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+
+}
+
+.profile-login_head {
+    font-size: 28px;
+    color: #000;
+    font-weight: 600;
+}
+
+.profile-back {
+    height: 45px;
+    background-color: #0052CC;
+    color: white;
+    width: 45px;
+    border: none;
+    border-radius: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-lefticon {
+    font-size: 22px;
+}
+
+.profile-pro1 {
+    position: relative;
+}
+
+.profile-profile_img {
+    height: 100px;
+    background-color: #0052CC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.profile-inner_circle {
+    height: 70px;
+    width: 70px;
+    background-color: white;
+    color: #0052CC;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.profile-inputContainer {
+    position: relative;
+}
+
+.profile-inputField {
+    font-size: 16px;
+}
+
+.profile-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    /* Make sure the icon does not block input clicks */
+}
+
+.profile-submit_bot1 {
+    height: 38px;
+    color: #fff;
+    background-color: #0052cc;
+    border: none;
+    border-radius: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 500;
+}
+
+.login_head {
+    font-size: 28px;
+    color: #000;
+    font-weight: 600;
+}
+.h3_head
+{
+    font-size: 25px;
+
+}
+.avtar {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.basic {
+    font-size: 19px;
+    color: rgb(191, 45, 130);
+    font-weight: 500;
+}
+
+.info1 {
+    color: #6e829f;
+}
+
+b {
+    color: black;
+}
+
+.my_form_signup_profile {
+    padding: 30px;
+    background-color: white;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 3%;
+    /* margin-right: 3%; */
+}
+.my_profile {
+    padding: 30px;
+    background-color: white;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 2%;
+    margin-right: 3%;
+}
+.side_padd
+{
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 70px;
+}
+.submit_bot1 {
+    height: 38px;
+    color: #fff;
+    background-color: #0052cc;
+    border: none;
+    border-radius: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 500;
+}
+.line
+{
+    height: 2px;
+    background-color: #505050;
+    border:none
+}
+
+@media(max-width:1100px) {
+    .profile-goBack {
+        position: absolute;
+        top: 40px;
+        left: 30px;
+    }
+}
+
+@media(max-width:994px) {
+    .profile-my_form_signup_profile {
+        padding: 30px;
+        background-color: white;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        border-radius: 10px;
+        margin-top: 86px;
+        margin-bottom: 40px;
+    }
+
+    .profile-goBack {
+        position: static;
+        margin-top: 22px;
+    }
+}
+
+@media(max-width:980px) {
+    .profile-goBack {
+        position: static;
+        top: 40px;
+        left: 10px;
+    }
+    .my_form_signup_profile {
+        margin-left: auto;
+    }
+    .my_profile {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .side_padd {
+        padding-left: 3%;
+        padding-right: 3%;
+        margin-top: 0px;
+    }
+    .my_form_signup_profile {
+        padding: 30px;
+        background-color: white;
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+        border-radius: 10px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        
+    }
+}
+
+@media(max-width:747px) {
+    .profile-my_form_signup_profile {
+        margin-top: 30px;
+    }
+
+    .profile-goBack {
+
+        margin-top: 25px;
+    }
+
+    .profile-back {
+        height: 38px;
+        width:38px;
+        background-color: #0052CC;
+        color: white;
+        padding-left: 15px;
+        padding-right: 15px;
+        border: none;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        font-size: 14px;
+    }
+
+    .profile-lefticon {
+        font-size: 19px;
+    }
+
+    .profile-submit_bot1 {
+        height: 38px;
+        color: white;
+        background-color: #0052CC;
+        border: none;
+        border-radius: 8px;
+        padding-left: 25px;
+        padding-right: 25px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+}

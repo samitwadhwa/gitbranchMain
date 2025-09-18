@@ -1,0 +1,29 @@
+.report_in
+{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap:20px;
+  box-shadow: 0 0 11px -2px hsla(223, 3%, 58%, .4);
+    padding: 15px;
+    margin-bottom:20px;
+}
+.report-my_icon {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: #dcf4f3;
+  color: #66b6b2;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+}
+.report_in-desc > h5
+{
+  font-size: 17px;
+}
+.mult-slctt
+{
+  border:1px solid #dee2e6;
+}

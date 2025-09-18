@@ -1,0 +1,288 @@
+.tab-active{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+/* Default (Laptop/Desktop) */
+#myselecteddate {
+  display: flex;
+  align-items: center;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 4px 12px;
+ 
+  font-size: 14px;
+  gap: 10px;
+  width: fit-content;
+}
+
+#myselecteddate .custom-select {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#myselecteddate .date-inputs {
+  display: flex;
+  align-items: center;
+}
+
+#myselecteddate .date-inputs input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 4px;
+  background: transparent;
+}
+
+.dash {
+  margin: 0 6px;
+  color: gray;
+}
+
+/* ✅ Mobile responsive */
+@media (max-width: 768px) {
+  #myselecteddate {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  #myselecteddate .custom-select {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 6px 8px;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  #myselecteddate .date-inputs {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+  }
+
+  #myselecteddate .date-inputs input {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 6px 8px;
+    width: 100%;
+  }
+
+  .dash {
+    display: none; /* mobile pe dash hide */
+  }
+}
+
+
+
+
+#Payment-Fail  {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: white;
+}
+#Payment-Fail .top-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#Payment-Fail .top-bar .left,
+#Payment-Fail .top-bar .right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+#Payment-Fail .tab {
+  font-size: 16px;
+  color: #0d0d0d;
+  cursor: pointer;
+  font-weight: 500
+}
+
+#Payment-Fail .tab.active {
+    font-weight: bold;
+    color: #000;
+}
+
+#Payment-Fail .time {
+    font-size: 16px;
+    color: #0d0d0d;
+    cursor: pointer;
+    font-weight: 500;
+  /* cursor: pointer; */
+}
+
+#Payment-Fail .refresh {
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#Payment-Fail .refresh:hover {
+  background: #4338ca;
+}
+
+#Payment-Fail .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+#Payment-Fail .card2 {
+  background: #f5f7ff;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+
+#payment-fail-table {
+  padding: 20px ;
+  background: #fff;
+}
+
+/* Tabs */
+#payment-fail-table .tabs {
+  display: flex;
+  gap: 20px;
+  /* border-bottom: 1px solid #e5e5e5; */
+  margin-bottom: 15px;
+}
+#payment-fail-table .tab {
+  padding: 10px 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  color: #555;
+}
+#payment-fail-table .tab.active {
+  color: #4f46e5;
+  border-top: 3px solid #4f46e5;
+  font-weight: 600;
+}
+
+/* Filters */
+#payment-fail-table .filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+#payment-fail-table .filters input {
+  padding: 8px;
+  /* border: 1px solid #ddd; */
+  border-radius: 4px;
+}
+#payment-fail-table .search-btn {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#payment-fail-table .clear-btn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Table */
+
+#payment-fail-table .settlement-table th {
+  background: #f9f9f9;
+
+}
+#payment-fail-table {
+  margin-top: 6px;
+}
+
+/* Status pills */
+#payment-fail-table .status-pill {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+#payment-fail-table .status-pill.green {
+  background: #22c55e;
+}
+#payment-fail-table .status-pill.red {
+  background: #ef4444;
+}
+#payment-fail-table .status-pill.orange {
+  background: #f59e0b;
+}
+
+/* Details button */
+#payment-fail-table .details-btn {
+  background: none;
+  border: none;
+  color: #4f46e5;
+  cursor: pointer;
+}
+
+/* Pagination */
+#payment-fail-table .pagination {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#payment-fail-table .pagination select {
+  padding: 5px;
+}
+#payment-fail-table .pagination .page {
+  border: 1px solid #ddd;
+  background: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+#payment-fail-table .pagination .page.active {
+  background: #4f46e5;
+  color: white;
+}
+#payment-fail-table .small-input {
+  width: 180px; 
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  
+  #payment-fail-table .small-input{
+    width: 100%; 
+  }
+}

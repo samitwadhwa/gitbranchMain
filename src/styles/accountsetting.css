@@ -1,0 +1,745 @@
+#profile-container {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  font-family: Arial, sans-serif;
+}
+
+/* Left Section */
+#profile-container .profile-left {
+  flex: 1;
+  background: #f7f9ff;
+  border-radius: 6px;
+  padding: 20px;
+  text-align: left;
+}
+
+#profile-container .profile-logo {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+#profile-container .profile-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+#profile-container .profile-role {
+  color: #888;
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+#profile-container .profile-id {
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+#profile-container .profile-id span {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+#profile-container .copy-icon {
+  font-size: 16px;
+  margin-left: 5px;
+  cursor: pointer;
+  color: #666;
+}
+
+/* Right Section */
+#profile-container .profile-right {
+  flex: 2;
+  padding: 10px 20px;
+}
+
+#profile-container .profile-right p {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+#profile-container .label {
+  font-weight: 500;
+}
+
+#profile-container .value {
+  color: #000;
+}
+
+#profile-container .value a {
+  margin-left: 10px;
+  font-size: 13px;
+  color: #365fdd;
+  text-decoration: none;
+}
+
+
+
+#profile-container .info-icon {
+  font-size: 16px;
+  margin-right: 6px;
+  color: #555;
+}
+
+#profile-container input[type="checkbox"] {
+  margin-left: 6px;
+}
+
+/* Container for all cards */
+#settings-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); /* 3 cards ek row mein */
+  gap: 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Each card */
+#settings-container .custom-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-height: 220px; /* saare cards same height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+
+/* Card header */
+#settings-container .card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#settings-container .card-icon {
+  font-size: 28px;
+  color: #1ba94c; /* green icon */
+}
+
+#settings-container .card-header h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+}
+
+/* Card links */
+#settings-container .card-links {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0 0;
+}
+
+#settings-container .card-links li {
+  margin: 6px 0;
+}
+
+#settings-container .card-links a {
+  text-decoration: none;
+  color: #1a73e8; /* blue links */
+  font-size: 14px;
+}
+
+
+#business-card {
+    overflow: hidden;
+  background: #fff;
+  color: black;
+  padding: 16px;
+  margin: 20px;
+}
+#business-card .tabs> .tab {
+ white-space: nowrap;
+
+}
+#business-card .tabs {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+  overflow-x: auto; /* allow horizontal scroll */
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on mobile */
+  scrollbar-width: thin; /* Firefox */
+}
+
+#business-card .tabs li {
+  flex: 0 0 auto; /* prevent shrinking, keep width as needed */
+  margin-right: 20px;
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 14px;
+  color: #444;
+  position: relative;
+}
+
+#business-card .tabs li.active {
+  font-weight: 600;
+  color: #1a73e8;
+}
+
+#business-card .tabs li.active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #1a73e8;
+  border-radius: 2px;
+}
+
+#business-card .tab-content {
+  padding: 10px 0;
+  font-size: 14px;
+  color: #333;
+  opacity: 1;
+  transform: translateX(0px);
+}
+#business-card .website-details h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+#business-card .website-details p {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+#business-card .website-boxes {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+#business-card .website-card {
+  flex: 1;
+  /* min-width: 250px; */
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 12px;
+  background: #fff;
+}
+
+#business-card .website-card .icon {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+#business-card .website-card p {
+  font-size: 14px;
+  margin: 8px 0;
+  word-break: break-word;
+}
+
+#business-card .badge {
+  display: inline-block;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 12px;
+  margin-right: 6px;
+}
+
+#business-card .badge.primary {
+  background: #e8f0fe;
+  color: #1a73e8;
+}
+
+
+#business-card .badge.app {
+  background: #ede7f6;
+  color: #673ab7;
+}
+
+#business-card .badge.active {
+  background: #e6f4ea;
+  color: #34a853;
+}
+
+
+
+#links-container .links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+#links-container .links-box {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 50px;
+
+ 
+  width: 100%;
+  max-width: 600px;
+}
+
+#links-container .link-item {
+  margin-bottom: 15px;
+}
+
+#links-container .link-label {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+#links-container .link {
+  display: block;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#links-container .link:hover {
+  text-decoration: underline;
+}
+
+#links-container .link-item:last-child {
+  margin-bottom: 0;
+}
+
+
+#website-details .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#website-details .header h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#website-details .header p {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 0;
+}
+
+#website-details .add-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#website-details .add-btn:hover {
+  background-color: #0056b3;
+}
+
+#website-details .website-boxes {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+#website-details .website-card {
+  flex: 1;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  background: #fff;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#website-details .website-card .icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+#website-details .website-card p {
+  font-size: 14px;
+  margin: 10px 0;
+  word-break: break-word;
+  color: #333;
+}
+
+#website-details .badge {
+  display: inline-block;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 12px;
+  margin-right: 8px;
+}
+
+#website-details .badge.primary {
+  background: #e8f0fe;
+  color: #1a73e8;
+}
+
+#website-details .badge.app {
+  background: #ede7f6;
+  color: #673ab7;
+}
+
+#website-details .badge.active {
+  background: #e6f4ea;
+  color: #34a853;
+}
+
+#website-details .edit-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: #f1f1f1;
+  color: #007bff;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+#website-details .edit-btn:hover {
+  background-color: #e9e9e9;
+}
+
+
+
+#key-details .table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 16px;
+}
+
+#key-details th, #key-details td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#key-details th {
+  background-color: #f7fafc;
+  font-weight: bold;
+  color: #333;
+}
+
+#key-details td {
+  color: #555;
+}
+
+#key-details .regenerate-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#key-details .regenerate-btn:hover {
+  background-color: #0056b3;
+}
+
+#key-details .table-responsive {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+
+#webhook-details {
+  margin: 20px;
+}
+
+#webhook-details .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#webhook-details .header h3 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: bold;
+}
+
+#webhook-details .documentation-link {
+  color: #007bff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+#webhook-details .add-webhook-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#webhook-details .add-webhook-btn:hover {
+  background-color: #0056b3;
+}
+
+#webhook-details .table-container {
+  margin-top: 20px;
+}
+
+#webhook-details .no-webhooks-message {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#webhook-details .no-webhooks-message p {
+  font-size: 16px;
+  color: #666;
+}
+
+#webhook-details .no-webhooks-message .add-webhook-btn {
+  margin-top: 15px;
+}
+
+#webhook-details .webhook-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #e5e7eb;
+}
+
+#webhook-details .webhook-table th,
+#webhook-details .webhook-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#webhook-details .webhook-table th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+#webhook-details .webhook-table td {
+  color: #333;
+}
+
+#webhook-details .webhook-table tr:last-child td {
+  border-bottom: none;
+}
+#business-card #website-details {
+
+padding:0px 20px 20px 20px;
+
+}
+#business-card .account-color {
+border-left: 4px solid #0056b3;
+margin:10px;
+padding:15px;
+
+}
+#business-card .customer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+#business-card .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+}
+
+/* #business-card .smallaccount {
+
+max-width: 650px;
+} */
+#business-card .modal-content {
+  background: #fff;
+  width: 95%;
+  max-width: 850px;
+  max-height: 700px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* overflow: scroll; */
+}
+
+#business-card .modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 26px;
+  cursor: pointer;
+
+  height: 30px;
+  width: 30px;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#business-card .modal-top-tabs {
+  display: flex;
+  overflow-x: auto;
+  border-bottom: 1px solid #ddd;
+  background: #f9f9f9;
+}
+
+#business-card .top-tab {
+  flex: 0 0 auto;
+  padding: 10px 20px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+#business-card .top-tab.active {
+  border-bottom: 3px solid #007bff;
+  font-weight: bold;
+  color: #007bff;
+}
+
+#business-card .modal-main {
+  padding: 20px;
+}
+
+#business-card .modal-main label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+
+#business-card .yes-btn {
+  
+  background: #007bff;
+  text-decoration: none;
+  color: white;
+  
+}
+#business-card .modal-footer {
+  margin-top: 20px;
+  text-align: right;
+}
+#business-card .next-btn,
+.submit-btn {
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+
+
+
+/* Form */
+#business-card .webhook-form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+#business-card .webhook-form label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+  color: #444;
+}
+
+
+
+/* Events Box */
+#business-card .events-box {
+  max-height: 150px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow-y: auto;
+  padding: 10px;
+  background: #fafafa;
+}
+
+/* Each Event Checkbox */
+#business-card .events-box div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+#business-card .events-box label {
+  font-weight: normal;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Search box inside Events */
+#business-card .events-search {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+#business-card .events-search:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.25);
+}
+#business-card .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+  
+}
+
+/* Modal Box */
+#business-card.modal-content.large-modal {
+  width: 600px;
+  max-width: 90%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+
+
+}

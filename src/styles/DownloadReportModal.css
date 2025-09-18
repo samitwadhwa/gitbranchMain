@@ -1,0 +1,147 @@
+/* Fullscreen overlay */
+#download-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+/* Modal box */
+#download-modal {
+  background: #fff;
+  width: 650px;
+  max-height: 90vh;
+  border-radius: 10px;
+  padding: 20px;
+  overflow-y: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Header */
+.download-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.download-subtitle {
+  font-size: 14px;
+  color: #555;
+  margin: 10px 0 20px;
+}
+
+/* Body */
+#download-modal-body {
+  margin-bottom: 20px;
+}
+
+/* Section */
+.download-section {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background: #fafafa;
+  transition: border 0.2s ease;
+}
+
+/* Active accordion styling */
+.download-section.active {
+  border-left: 2px solid #007bff;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+/* Section header */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-header.clickable {
+  cursor: pointer;
+}
+
+.section-subtext {
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+/* Inputs */
+.download-section label {
+  display: block;
+  font-weight: 500;
+  margin: 12px 0 4px;
+}
+
+.download-section input,
+.download-section select {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.required {
+  color: red;
+  margin-left: 4px;
+}
+
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Footer */
+#download-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.cancel {
+  background: #f2f2f2;
+  color: #333;
+}
+
+.btn.primary {
+  background: #007bff;
+  color: #fff;
+}
+
+/* Header with close button */
+#download-modal .download-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#download-modal .close-btn {
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+

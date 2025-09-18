@@ -1,0 +1,379 @@
+#settlement{
+    padding:20px;
+    background-color: white;
+    border-left:4px solid #4318FF;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap:20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+#settlement .myfirst{
+    height:50px;
+    width: 50px;
+    background-color: #F4F7FE;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 23px;
+    border-radius: 50%;
+}
+#settlement  h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+#settlement p{
+margin-bottom: 0px;
+}
+
+#set-element  {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: white;
+}
+#set-element .top-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#set-element .top-bar .left
+{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  /* flex-wrap: wrap; */
+}
+
+#set-element .top-bar .right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+#set-element .tab {
+  font-size: 16px;
+  color: #0d0d0d;
+  cursor: pointer;
+  font-weight: 500
+}
+
+#set-element .tab.active {
+    font-weight: bold;
+    color: #000;
+}
+
+#set-element .time {
+    font-size: 16px;
+    color: #0d0d0d;
+    cursor: pointer;
+    font-weight: 500;
+  /* cursor: pointer; */
+}
+
+#set-element .refresh {
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#set-element .refresh:hover {
+  background: #4338ca;
+}
+
+#set-element .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+#set-element .card2 {
+  background: #f5f7ff;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+#set-element .label {
+  font-size: 18px;
+  color: black;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+#set-element .value {
+  font-size: 20px;
+  font-weight: bold;
+  color: #696969;
+  margin-bottom: 4px;
+}
+
+#set-element .link {
+  font-size: 13px;
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+#set-element .link:hover {
+  text-decoration: underline;
+}
+
+#set-element .status {
+  font-size: 13px;
+  color: #16a34a;
+}
+
+#settlements-tables {
+  padding: 20px ;
+  background: #fff;
+}
+
+/* Tabs */
+#settlements-tables .tabs {
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 15px;
+}
+#settlements-tables .tab {
+  padding: 10px 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  color: #555;
+}
+#settlements-tables .tab.active {
+  color: #4f46e5;
+  border-top: 3px solid #4f46e5;
+  font-weight: 600;
+}
+
+/* Filters */
+#settlements-tables .filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+#settlements-tables .filters input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+#settlements-tables .search-btn {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#settlements-tables .clear-btn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Table */
+
+#settlements-tables .settlement-table th {
+  background: #f9f9f9;
+
+}
+.settlement-table {
+  margin-top: 6px;
+}
+
+/* Status pills */
+#settlements-tables .status-pill {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+#settlements-tables .status-pill.green {
+  background: #22c55e;
+}
+#settlements-tables .status-pill.red {
+  background: #ef4444;
+}
+#settlements-tables .status-pill.orange {
+  background: #f59e0b;
+}
+
+/* Details button */
+#settlements-tables .details-btn {
+  background: none;
+  border: none;
+  color: #4f46e5;
+  cursor: pointer;
+}
+
+/* Pagination */
+#settlements-tables .pagination {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#settlements-tables .pagination select {
+  padding: 5px;
+}
+#settlements-tables .pagination .page {
+  border: 1px solid #ddd;
+  background: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+#settlements-tables .pagination .page.active {
+  background: #4f46e5;
+  color: white;
+}
+#settlements-tables .small-input {
+  width: 180px; 
+  padding: 6px 10px;
+  font-size: 14px;
+}
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  
+  #settlements-tables .small-input{
+    width: 100%; 
+  }
+  #set-element .top-bar .right {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    flex-wrap: wrap;
+}
+#settlement {
+    
+    flex-wrap: wrap;
+}
+}
+
+/* Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease;
+  z-index: 999;
+}
+
+/* Modal box */
+.modal-box {
+  background: #fff;
+  width: 600px;
+  max-width: 90%;
+  border-radius: 10px;
+  overflow: hidden;
+  animation: slideUp 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Body */
+.modal-body {
+  padding: 20px;
+  min-height: 200px;
+}
+
+/* Footer */
+.modal-footer {
+  display: flex;
+  gap: 10px;
+  padding: 15px 20px;
+  border-top: 1px solid #eee;
+  justify-content: flex-end;
+}
+
+.modal-footer button {
+  padding: 8px 14px;
+  border: 1px solid #007bff;
+  background: white;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.modal-footer button.active,
+.modal-footer button:hover {
+  background: #007bff;
+  color: white;
+}
+
+/* Animation for content */
+.tab-content {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.4s ease;
+}
+
+.tab-content.settlement,
+.tab-content.holidays,
+.tab-content.guide {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes slideUp {
+  from {transform: translateY(50px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}
+
+

@@ -1,0 +1,543 @@
+
+#transaction-tables {
+  padding: 20px;
+  background: #fff;
+ 
+}
+
+/* Tabs */
+#transaction-tables .tabs {
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 15px;
+}
+#transaction-tables .tab {
+  padding: 10px 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  color: #555;
+}
+#transaction-tables .tab.active {
+  color: #4f46e5;
+  border-top: 3px solid #4f46e5;
+  font-weight: 600;
+}
+
+/* myfilters */
+#transaction-tables .admin-under_filters {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+#transaction-tables .myfilters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+#transaction-tables .myfilters input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+#transaction-tables .search-btn {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#transaction-tables .clear-btn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#settlements-tables .filter-group {
+  display: flex;
+  flex-direction: column;
+}
+
+#settlements-tables .filter-group label {
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+.mtone
+{
+  display: flex;
+  gap:10px;
+  flex-wrap: wrap;
+}
+
+/* Table */
+
+#transaction-tables .settlement-table th {
+  background: #f9f9f9;
+
+}
+.settlement-table {
+  margin-top: 6px;
+}
+
+/* Status pills */
+#transaction-tables .status-pill {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+#transaction-tables .status-pill.green {
+  background: #22c55e;
+}
+#transaction-tables .status-pill.red {
+  background: #ef4444;
+}
+#transaction-tables .status-pill.orange {
+  background: #f59e0b;
+}
+
+/* Details button */
+#transaction-tables .details-btn {
+  background: none;
+  border: none;
+  color: #4f46e5;
+  cursor: pointer;
+}
+#kk .filter-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+/* Pagination */
+#transaction-tables .pagination {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#transaction-tables .pagination select {
+  padding: 5px;
+}
+#transaction-tables .pagination .page {
+  border: 1px solid #ddd;
+  background: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+#transaction-tables .pagination .page.active {
+  background: #4f46e5;
+  color: white;
+}
+#transaction-tables .small-input {
+  width: 180px; /* small size for desktop */
+  padding: 6px 10px;
+  font-size: 14px;
+  height: 40px;
+  margin-top: 7px;
+  /* margin-bottom: 10px; */
+}
+#transaction-tables .my1-input {
+  width: 180px; /* small size for desktop */
+  padding: 6px 10px;
+  font-size: 14px;
+  height: 40px;
+  
+}
+
+
+#transaction-tables .tmyflx {
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: row;
+gap:10px;
+    margin-bottom: 15px;
+
+}
+
+#transaction-tables .tran-one {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+gap:10px;
+
+}
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+
+.admin-reportone_search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.admin-fsearch-container {
+  position: relative;
+  width: auto;
+ 
+  z-index: 10;
+}
+
+.admin-fsearch-input {
+  width: auto;
+  padding: 8px 55px 8px 20px;
+  flex-wrap: wrap;
+  border-radius: 6px;
+  border: 1px solid #dee2e6;
+  color: rgb(60, 57, 57);
+  font-size: 16px;
+  outline: none;
+  background-color: transparent;
+}
+
+.admin-fsearch-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-42%);
+  pointer-events: none;
+  z-index: 190;
+  font-size: 16px;
+  border: none;
+  color: white;
+}
+
+.admin-fsrch_icn {
+  background-color: #004bbb;
+  color: white;
+  padding: 7px;
+  border-radius: 50%;
+  border: none;
+}
+
+.admin-fsrch {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.mysiderr
+{
+  padding: 20px;
+  padding-top: 0px;
+}
+
+/* transactiondetail */
+
+#mydetailszap {
+  background: #f8f9fa;
+}
+
+#mydetailszap .boxzap {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+#mydetailszap .failderror {
+  color: #c82333;
+  background-color: #fceceb;
+  font-size: 13px;
+}
+#mydetailszap .error-box {
+  background: #fff0f0;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #c82333;
+}
+
+#mydetailszap .details-box label {
+  font-weight: 600;
+  width: 150px;
+  display: inline-block;
+}
+
+#mydetailszap .timeline-box {
+  border-left: 3px solid #dee2e6;
+  padding-left: 15px;
+}
+
+#mydetailszap .Createtransfer {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+#mydetailszap .refund-btn2 {
+background: #007bff;
+    border: none;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#mydetailszap .timeline-step {
+  margin-bottom: 20px;
+}
+
+#mydetailszap .timeline-step .title {
+  font-weight: 600;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+#myzaprefund {
+  font-family: Arial, sans-serif;
+}
+
+/* Refund Card */
+#myzaprefund .refund-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+#myzaprefund .refund-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#myzaprefund .refund-btn {
+  background: #007bff;
+  border: none;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#myzaprefund .refund-btn:hover {
+  background: #0056b3;
+}
+#myzaprefund .refund-text {
+  margin-top: 10px;
+  color: #777;
+  font-size: 14px;
+}
+
+/* Overlay */
+#myzaprefund .refund-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center; /* middle me laye */
+  z-index: 999;
+}
+
+/* Popup */
+#myzaprefund .refund-popup {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  animation: slideUp 0.4s ease;
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Header */
+#myzaprefund .popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#myzaprefund .popup-header h6 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+#myzaprefund .popup-close {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+  transition: 0.2s;
+}
+#myzaprefund .popup-close:hover {
+  color: #000;
+}
+
+/* Body */
+#myzaprefund .popup-label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+#myzaprefund .required {
+  color: red;
+}
+#myzaprefund .popup-input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+#myzaprefund .popup-small {
+  font-size: 12px;
+  color: #777;
+}
+#myzaprefund .popup-check {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+#myzaprefund .popup-check input {
+  margin-right: 5px;
+}
+#myzaprefund .fee {
+  color: #777;
+}
+#myzaprefund .popup-note {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+#myzaprefund .popup-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+}
+#myzaprefund .popup-link:hover {
+  text-decoration: underline;
+}
+
+/* Textarea (hidden until clicked) */
+#myzaprefund .popup-textarea {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: none;
+  min-height: 80px;
+  font-size: 14px;
+  animation: slideDown 0.3s ease;
+}
+@keyframes slideDown {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 100px;
+    opacity: 1;
+  }
+}
+
+/* Footer */
+#myzaprefund .popup-footer {
+  margin-top: 20px;
+}
+#myzaprefund .popup-submit {
+  width: 100%;
+  background: #007bff;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+#myzaprefund .popup-submit:hover {
+  background: #0056b3;
+}
+
+
+
+@media (max-width: 1200px) {
+#transaction-tables .tmyflx {
+  flex-wrap: wrap;
+}
+#transaction-tables .tran-one
+{
+  flex-wrap: wrap;
+
+}
+#transaction-tables .myfilters{
+   flex-wrap: wrap;
+
+}
+.admin-fsearch-container
+{
+  width:auto;
+}
+#transaction-tables .tabs{
+  overflow-y: scroll;
+}
+#transaction-tables .myfilters {
+  display: block;
+}
+}
+@media (max-width: 768px) {
+  
+  #transaction-tables .small-input{
+    width: 100%; 
+  }
+  #transaction-tables .my1-input {
+    width: 100%; 
+  }
+.details-box > p
+{
+  border: 1px solid #e9e9e9a5;
+  padding:4px 10px;
+  border-radius: 2px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-wrap: wrap;
+  gap:4px
+}
+
+}

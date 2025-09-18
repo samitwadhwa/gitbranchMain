@@ -1,0 +1,659 @@
+/* Dashboard Scoped Styles */
+#Dashboard-container.overview-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Patterned header */
+#Dashboard-container .overview-header {
+  color: white;
+  text-align: left;
+  padding: 0 10px 60px 10px;
+  position: relative;
+  border-radius: 0 0 15px 15px;
+  background-image: url("../../public/img/pinku.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#Dashboard-container .react-datepicker-popper {
+  width: 100% !important;
+  max-width: 320px;
+  z-index: 9999;
+}
+
+#Dashboard-container .overview-greeting {
+  font-size: 57px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+#Dashboard-container .overview-date {
+  font-size: 30px;
+  font-weight: 500;
+  padding-left: 30px;
+  padding-top: 2px;
+  opacity: 0.85;
+}
+
+/* Cards container */
+#Dashboard-container .overview-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: -50px;
+  padding: 0 20px 20px;
+}
+
+/* Card styling */
+#Dashboard-container .card {
+  background: white;
+  border-radius: 15px;
+  display: flex;
+  gap: 22px;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px 10px 20px 10px;
+  position: relative;
+  min-height: 130px;
+  border: none !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+#Dashboard-container .card-icon {
+  /* width: 46px;
+  height: 46px;  */
+  border-radius: 50%;
+  background: #f5f7ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #4a00e0;
+}
+
+#Dashboard-container .card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+#Dashboard-container .card h4 {
+  margin: 0 0 4px 0;
+  font-weight: 600;
+  font-size: 22px;
+  color: #1A1A1A;
+}
+
+#Dashboard-container .card-amount {
+  font-weight: 600;
+  font-size: 27px;
+  color: #72747F;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  #Dashboard-container .overview-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #Dashboard-container .stats-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1 1;
+    width: 100%;
+  }
+  #Dashboard-container .chart-section {
+    width: 100%;
+  }
+  #Dashboard-container .payments-header {
+    display: block !important;
+    margin-bottom: 15px;
+  }
+  #Dashboard-container .filters {
+    display: block !important;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  #Dashboard-container .overview-cards {
+    grid-template-columns: 1fr;
+  }
+
+  #Dashboard-container .overview-greeting {
+    font-size: 20px;
+  }
+}
+
+/* Payments overview */
+#Dashboard-container .payments-overview {
+  background: #f9fbff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#Dashboard-container .m-mypay {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#Dashboard-container .payments-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#Dashboard-container .payments-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2b2b2b;
+}
+
+#Dashboard-container .filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#Dashboard-container .filter-box {
+  background: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 158px;
+}
+
+#Dashboard-container .filter-select {
+  border-radius: 6px;
+  font-size: 14px;
+  background: white;
+  color: black;
+  padding-right: 190px;
+}
+
+/* Layout */
+#Dashboard-container .overview-content {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Stats */
+#Dashboard-container .stats-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  min-width: 180px;
+}
+
+#Dashboard-container .stat-item {
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  border: 1px solid #e5e7eb;
+}
+
+#Dashboard-container .stat-item p {
+  color: #6b7280;
+  margin: 0 0 5px 0;
+}
+
+#Dashboard-container .stat-item h3 {
+  margin: 0;
+  font-weight: 600;
+  color: #000;
+}
+
+#Dashboard-container .stat-item.active {
+  border: 1px solid #4a00e0;
+  box-shadow: 0 0 0 2px rgba(74, 0, 224, 0.1);
+}
+
+/* Chart Section */
+#Dashboard-container .chart-section {
+  background: white;
+  border-radius: 8px;
+  flex: 3;
+  min-width: 300px;
+  position: relative;
+  border: 1px solid #e5e7eb;
+  padding: 10px;
+}
+
+#Dashboard-container .chart-header-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #f5f7ff;
+  padding: 6px;
+  border-radius: 50%;
+  color: #4a00e0;
+  font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #Dashboard-container .overview-content {
+    flex-direction: column;
+  }
+}
+
+/* Top Insights */
+#Dashboard-container #top-insights .top-insights {
+  background: #f2f6fd;
+  padding: 2rem;
+}
+
+#Dashboard-container #top-insights .header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+#Dashboard-container #top-insights .header h4 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #1f2d5a;
+}
+
+#Dashboard-container #top-insights .filters {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+#Dashboard-container #top-insights .filters input,
+#Dashboard-container #top-insights .filters select {
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+}
+
+#Dashboard-container #top-insights .cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+#Dashboard-container #top-insights .card {
+  background: white;
+  border-radius: 15px;
+  display: flex;
+  gap: 22px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 15px;
+  position: relative;
+  min-height: 130px;
+  border: none !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+#Dashboard-container #top-insights .card-text h6 {
+  font-size: 1rem;
+  color: #1f2d5a;
+  margin-bottom: 0.2rem;
+}
+
+#Dashboard-container #top-insights .subtitle {
+  font-size: 0.8rem;
+  color: #7f8c8d;
+  margin-bottom: 0.3rem;
+}
+
+#Dashboard-container #top-insights .value {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+#Dashboard-container #top-insights .bold {
+  font-weight: bold;
+}
+
+#Dashboard-container #top-insights .card-text a {
+  font-size: 0.85rem;
+  color: #3f51b5;
+  text-decoration: none;
+}
+
+#Dashboard-container #top-insights .card-text a:hover {
+  text-decoration: underline;
+}
+
+#Dashboard-container #top-insights .card-icon svg {
+  height: 120px;
+  width: 120px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  #Dashboard-container #top-insights .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  #Dashboard-container #top-insights .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #Dashboard-container #top-insights .filters {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #Dashboard-container #top-insights .filters input,
+  #Dashboard-container #top-insights .filters select {
+    width: 100%;
+  }
+}
+
+/* Products */
+#Dashboard-container .products-wrapper {
+  padding: 2rem;
+  background-color: #f5f7fb;
+}
+
+#Dashboard-container .products-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+#Dashboard-container .products-carousel-container {
+  position: relative;
+}
+
+#Dashboard-container .products-carousel {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 1rem;
+}
+
+#Dashboard-container .products-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+#Dashboard-container .product-card {
+  flex: 0 0 260px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+#Dashboard-container .product-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+#Dashboard-container .product-body {
+  padding: 1rem;
+}
+
+#Dashboard-container .product-title {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+#Dashboard-container .product-desc {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 0.8rem;
+}
+
+#Dashboard-container .know-more-btn {
+  background: linear-gradient(90deg, #637dff, #5d42ff);
+  border: none;
+  padding: 0.4rem 0.8rem;
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#Dashboard-container .know-more-btn:hover {
+  background: linear-gradient(90deg, #5d42ff, #637dff);
+}
+
+#Dashboard-container .nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  z-index: 10;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Dashboard-container .nav-left {
+  left: -15px;
+}
+
+#Dashboard-container .nav-right {
+  right: -15px;
+}
+
+
+#mydatepick {
+  position: relative;
+  width: 180px; /* Desktop width */
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#mydatepick .input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 2px 10px;
+  cursor: pointer;
+  background-color: #fff;
+  transition: border 0.2s;
+}
+
+#mydatepick .input-wrapper:hover {
+  border-color: #dcdcdc;
+}
+
+#mydatepick .input-wrapper input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+#mydatepick .calendar-icon {
+  position: absolute;
+  right: 8px;
+  font-size: 18px;
+  color: #333333;
+  pointer-events: none;
+}
+
+#mydatepick .calendar-popup {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  z-index: 9999;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-5px);
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.12);
+
+  padding: 8px; /* Reduced padding */
+  
+  overflow: hidden;
+}
+
+#mydatepick .calendar-popup.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* DayPicker customization */
+#mydatepick .rdp-month {
+  display: table;              /* table-based grid */
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#mydatepick .rdp-week {
+  display: table-row;          /* each week = row */
+}
+
+#mydatepick .rdp-day {
+  display: table-cell;         /* each day = cell */
+  text-align: center;
+  vertical-align: middle;
+  width: 36px;                 /* fixed cell size */
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+#mydatepick .rdp-day:hover {
+  background-color: #e6f0ff;
+  color: #007bff;
+}
+
+#mydatepick .rdp-day_selected {
+  background-color: #007bff !important;
+  color: #fff !important;
+}
+
+/* Responsive for phone */
+@media (max-width: 768px) {
+  #mydatepick {
+    width: 100%;
+  }
+}
+
+
+
+#Dashboard-container #myselecteddate {
+  display: flex;
+  align-items: center;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+padding:6px 10px;
+  font-size: 14px;
+  gap: 10px;
+  width: fit-content;
+  background-color: rgb(255, 255, 255);
+}
+
+#Dashboard-container #myselecteddate .custom-select {
+  border: none;
+  outline: none;
+  background: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#Dashboard-container #myselecteddate .date-inputs {
+  display: flex;
+  align-items: center;
+}
+
+#Dashboard-container  #myselecteddate .date-inputs input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 4px;
+  background: transparent;
+}
+
+#Dashboard-container  .dash {
+  margin: 0 6px;
+  color: gray;
+}
+
+/* ✅ Mobile responsive */
+@media (max-width: 768px) {
+  #myselecteddate {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  #payment-links #righti {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+
+  }
+
+  #payment-links .tabi {
+    padding: 2px 9px;
+  }
+
+  #myselecteddate .custom-select {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 6px 8px;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  #myselecteddate .date-inputs {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+  }
+
+  #myselecteddate .date-inputs input {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 6px 8px;
+    width: 100%;
+  }
+
+  .dash {
+    display: none;
+    /* mobile pe dash hide */
+  }
+}

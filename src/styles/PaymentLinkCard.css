@@ -1,0 +1,220 @@
+#payment-link-card  .payment-section {
+  background: #f7f9ff; /* light background like screenshot */
+  padding: 30px;
+  border-radius: 8px;
+}
+
+#payment-link-card  .payment-title {
+  font-size: 18px;
+  font-weight: 600;
+
+  margin-top: 40px;
+  margin-left: 30px;
+  color: #111;
+}
+
+
+#payment-link-card .payment-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+#payment-link-card .payment-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+ max-width:  500px;
+
+}
+
+#payment-link-card .card-content {
+  flex: 1;
+}
+
+#payment-link-card .card-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#payment-link-card .card-desc {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+#payment-link-card .card-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: #5f2eea;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+#payment-link-card .card-image {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+#payment-link-card .card-image img {
+  width: 250px; /* Adjust as needed */
+  height: 150px;
+}
+
+
+/* File: PaymentLinkForm.css */
+
+.payment-form-wrapper {
+  background-color: #f5f7fc;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.payment-form-container {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.form-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.payment-form .form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 14px;
+  color: #222;
+  margin-bottom: 6px;
+}
+.checkbox-group> label{
+  margin-bottom: 0px;
+}
+
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="date"],
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  margin-top: 10px;
+}
+
+.checkbox-group {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  margin-top: 10px;
+}
+
+.expiry-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-inline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.reminder-info {
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.reminder-info strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.reminder-info a {
+  color: #5f2eea;
+  text-decoration: none;
+}
+
+.notes-section {
+  margin-top: 20px;
+}
+
+.add-notes {
+  color: #5f2eea;
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.form-actions {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn-primary {
+  background-color: #5f2eea;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-grid>.form-group
+{
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .payment-form .form-grid {
+    grid-template-columns: 1fr; /* sirf 1 column */
+    gap: 15px; /* thoda chhota gap mobile me */
+  }
+  .form-grid>.form-group
+{
+  margin-bottom: 0px;
+}
+}

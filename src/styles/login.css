@@ -1,0 +1,241 @@
+/* =========================
+   ZAPNOW Login - Fullscreen Layout
+   Scoped to #myloginzapnow
+   ========================= */
+:root {
+  --zap-primary: #4318FF;
+  --zap-primary-dark: #372ee0;
+  --zap-text: #1a1a3c;
+  --zap-muted: #6b7280;
+  --zap-border: #e5e7eb;
+  --zap-bg: #ffffff;
+  --zap-grad-start: #7a84f7;
+  --zap-grad-end: #3c29d0;
+}
+
+#myloginzapnow {
+
+  background: var(--zap-bg);
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* Container → full screen grid */
+#myloginzapnow .login-container {
+  display: grid;
+  grid-template-columns: 60% 40%; /* 50% form + 50% gradient */
+  width: 100%;
+  min-height: 100vh;  /* Full screen height */
+}
+
+/* -------------------------
+   LEFT SIDE (Form)
+   ------------------------- */
+#myloginzapnow .login-left {
+  padding: 5% 20%; /* top-bottom 5%, left-right 8% */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+}
+
+#myloginzapnow .login-left h5 {
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--zap-muted);
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+#myloginzapnow .login-left h2 {
+  font-size: clamp(22px, 3.1vw, 28px);
+  line-height: 1.25;
+  font-weight: 800;
+  color: var(--zap-text);
+  letter-spacing: 0.1px;
+  margin: 0 0 8px;
+}
+
+#myloginzapnow .login-left form {
+  width: 100%;
+  max-width: 440px;
+}
+
+#myloginzapnow .login-left label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--zap-text);
+  margin: 14px 0 8px;
+}
+
+#myloginzapnow .login-left> form> .check-keep> label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--zap-text);
+  margin: 0px;
+}
+
+#myloginzapnow input[type="email"],
+#myloginzapnow input[type="password"],
+#myloginzapnow input[type="text"] {
+  width: 100%;
+  height: 44px;
+  padding: 0 14px;
+  border-radius: 10px;
+  border: 1px solid var(--zap-border);
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  background: #fff;
+}
+
+#myloginzapnow input::placeholder {
+  color: #9ca3af;
+}
+
+#myloginzapnow input:focus {
+  border-color: var(--zap-primary);
+  box-shadow: 0 0 0 4px rgba(74, 58, 255, 0.12);
+}
+
+/* Password field with eye icon */
+#myloginzapnow .password-wrapper {
+  position: relative;
+}
+
+#myloginzapnow .password-wrapper i {
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-end: 12px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #737373;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Forgot link */
+#myloginzapnow .forgot {
+  display: inline-block;
+  margin: 6px 0 16px;
+  font-size: 13px;
+  color: var(--zap-primary);
+  text-decoration: none;
+}
+#myloginzapnow .forgot:hover {
+  text-decoration: underline;
+}
+
+/* Keep me logged in */
+#myloginzapnow .check-keep {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+  font-size: 14px;
+  color: #3f3f46;
+}
+#myloginzapnow .check-keep input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--zap-primary);
+}
+
+/* Button */
+#myloginzapnow button {
+  width: 180px;
+  height: 42px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--zap-primary);
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.06s ease, background 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 18px rgba(74, 58, 255, 0.28);
+}
+#myloginzapnow button:hover {
+  background: var(--zap-primary-dark);
+}
+#myloginzapnow button:active {
+  transform: translateY(1px);
+}
+
+/* -------------------------
+   RIGHT SIDE (Brand / Gradient)
+   ------------------------- */
+#myloginzapnow .login-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, var(--zap-grad-start), var(--zap-grad-end));
+  color: white;
+  text-align: center;
+  padding: 40px;
+  border-bottom-left-radius: 120px;
+}
+
+#myloginzapnow .login-right h1 {
+  font-size: clamp(34px, 5.5vw, 56px);
+  letter-spacing: 1px;
+  margin: 0;
+  font-weight: 800;
+}
+#myloginzapnow .login-right p {
+  margin: 8px 0 0;
+  font-size: clamp(14px, 2.2vw, 22px);
+  opacity: 0.95;
+  font-weight: 600;
+}
+
+/* Helpers (optional states) */
+#myloginzapnow .field-error {
+  border-color: #ef4444 !important;
+  box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.12) !important;
+}
+#myloginzapnow .error-text {
+  color: #dc2626;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.back-link
+{
+    color: rgb(110, 110, 110);
+}
+
+/* -------------------------
+   RESPONSIVE
+   ------------------------- */
+@media (max-width: 980px) {
+  #myloginzapnow .login-container {
+    grid-template-columns: 1fr;
+  }
+  #myloginzapnow .login-right {
+   display: none;
+  }
+
+  #myloginzapnow .login-left {
+    padding: 40px 24px;
+  }
+  #myloginzapnow button {
+    width: 100%;
+  }
+  #myloginzapnow .login-left form {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+}
+
+@media (max-width: 520px) {
+  #myloginzapnow .login-left h2 {
+    margin-bottom: 22px;
+  }
+}

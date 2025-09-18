@@ -1,0 +1,333 @@
+
+  
+  .dropdown {
+      position: relative;
+      display: inline-block;
+  }
+  .mylogo
+  {
+    height: 80px;
+  }
+  
+  .dropdown-toggle {
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+  }
+  
+  .dropdown-toggle i {
+      margin-left: 8px;
+  }
+  
+  .dropdown-menu {
+      border: none;
+      position: static;
+      background: transparent;
+      margin-top: 10px;
+      padding-left: 10px;
+      width: 100%;
+      z-index: 1;
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  
+  .dropdown-menu, .show2 {
+      max-height: 500px; /* Adjust as needed */
+      opacity: 1;
+      margin-top: 0px;
+      padding-top: 1px;
+      animation: slideDown 0.3s ease-in-out forwards;
+  }
+  
+  
+  .dropdown-menu a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
+  
+  .dropdown-menu a:hover {
+      background-color: #f1f1f1;
+      color: #0b645c;
+  }
+  .sidebar_flx {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    gap: 20px;
+}
+.zapgate{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 8px 12px 16px;
+   
+
+
+
+}
+.btn1-side{
+    background-color: #4318ff;
+    color: white;
+    border-radius: 24px;
+    width: 70%;
+    margin-top: 10px;
+    
+
+}
+.btn-side:hover{
+    
+    
+}
+  
+  @keyframes slideDown {
+      0% {
+          transform: translateY(-10px);
+          opacity: 0;
+      }
+      100% {
+          transform: translateY(0);
+          opacity: 1;
+      }
+  }
+  
+  @keyframes slideUp {
+      0% {
+          transform: translateY(0);
+          opacity: 1;
+      }
+      100% {
+          transform: translateY(-10px);
+          opacity: 0;
+      }
+  }
+  .admin-top
+  {
+    color:rgb(0, 0, 0);
+    margin-bottom: 15px;
+  }
+  .sidenav {
+    height: 100vh;
+    position: fixed;
+    z-index: 31;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    color: #555555;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+    width: 16.7%;
+    scrollbar-width: none;
+}
+.sidenav .active
+{
+    color: #4318FF;
+    /* background-color: rgba(210, 16, 16, 0.12); */
+    border-radius:2px;
+    border-right:5px solid blue;
+}
+.sidenav a {
+    padding: 12px 8px 12px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    /* color: white; */
+    font-weight:500;
+    letter-spacing: 0.4px;
+    color: #555555;
+    display: block;
+    transition: 0.3s;
+    margin-bottom:5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor:pointer;
+    margin:0px 0px 0px 10px;
+  }
+  .sidenav a:hover{
+    /* color:#555555; */
+    /* background-color: rgba(255, 255, 255, 0.05); */
+    letter-spacing:0.9px;
+  }
+  
+  /* .sidenav a:hover {
+  } */
+  
+  
+  .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+      display: none;
+  }
+  .logo
+  {
+      height:30px;
+  }
+  .side-txt
+  {
+      font-size:17px;
+      color:white;
+      margin-bottom:1px;
+      margin-top:2px;
+  }
+  .side-txt1
+  {
+      font-size:15px;
+      color:white;
+      margin-bottom:0px;
+      color:#CACACA;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      
+      
+  }
+  .myflx
+  {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .side-flx {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap:18px;
+      margin-top:25px;
+      margin-left:15px;
+  }
+  .profile{
+      height:50px;
+  }
+  .pages{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap:8px;
+      font-size:15px;
+  }
+  .pages2{
+      display: flex;
+          justify-content: space-between !important;
+      align-items: center;
+      gap:14px;
+      font-size:15px;
+      padding-right:20px !important;
+  }
+  .top-marginn
+  {
+      margin-top:25px;
+      max-height:78vh;
+      overflow:scroll;
+      scrollbar-width:none;
+  }
+  .logo-flx
+  {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top:14px;
+      margin-bottom:10px;
+  }
+  .desk-flx{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap:14px;
+  }
+  .logo-flx2, .logo2
+  {
+      display:none;
+  }
+  .jojo
+  {
+      text-align:right;
+  }
+  .sidebar_flx{
+      display: flex;
+      justify-content: space-between !important;
+      align-items: center;
+      gap:20px;
+  }
+  .menu_txt{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap:14px;
+  }
+  .down_arow{
+      padding-right:15px;
+  }
+  @media screen and (min-width: 991px) {
+    .hamburger {
+      display: none;
+    }
+    .sidenav {
+      width: 15.7%;
+    }
+    
+  }
+  @media screen and (max-width: 990px) {
+  .mylogo
+  {
+      display:block;
+      height:60px;
+      background-color: transparent;
+  }  
+  .user_name
+  {
+    display: none;
+  }
+     .hamburger {
+      display: block;
+      cursor: pointer;
+    }
+    .sidenav {
+      width: 0;
+      padding-top: 15px;
+    }
+    .sidenav .closebtn {
+      position: absolute;
+      top: 9px;
+      right: 10px;
+      font-size: 30px;
+      margin-left: 50px;
+      display: block;
+    }
+    .desk-flx {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 14px;
+      padding-left: 15px;
+      margin-bottom: 20px;
+        margin-top: 15px;
+    }
+    .logo-flx {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 16px;
+        margin-bottom: 14px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+      
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
